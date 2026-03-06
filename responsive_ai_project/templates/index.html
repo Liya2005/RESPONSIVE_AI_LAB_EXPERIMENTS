@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Disease Predictor</title>
+    
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+
+            <div class="card shadow p-4">
+                <h3 class="text-center mb-4">AI Disease Predictor</h3>
+
+                <form method="POST" action="/predict">
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Fever</label>
+                        <select class="form-select" name="fever">
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Cough</label>
+                        <select class="form-select" name="cough">
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Headache</label>
+                        <select class="form-select" name="headache">
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100">
+                        Predict Disease
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
